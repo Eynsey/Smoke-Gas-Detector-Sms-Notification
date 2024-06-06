@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bar-graph {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 80%;
+    height: 400px;
+    margin: 50px auto;
+    border: 5px solid black;
+    background-color: wheat;
+    padding-bottom: 20px;
+    margin-top: 70px;
+    
+}
+header {
+    background-color: #3FB4B8;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-left: 15px
+}
+
+.bar {
+    width: 10%;
+    position: relative;
+    text-align: left;
+}
+
+.bar1 {
+    background-color: #FF6384;
+    border: 2px solid black;
+}
+
+.bar2 {
+    background-color: #36A2EB;
+    border: 2px solid black;
+}
+
+.bar3 {
+    background-color: #FFCE56;
+    border: 2px solid black;
+}
+
+.bar4 {
+    background-color: #4BC0C0;
+    border: 2px solid black;
+}
+
+.bar5 {
+    background-color: #9966FF;
+    border: 2px solid black;
+}
+
+.bar6 {
+    background-color: #FF9F40;
+    border: 2px solid black;
+}
+/*Pseudo Element*/
+.bar::after {
+    content: attr(data-description);
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+/* Styles for the graph container */
+.graph-container {
+    display: flex;
+}
+
+.y-axis {
+
+height: 94%;
+width: 100px;
+margin-left: -5px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.y-label {
+    font-size: 20px;
+    color: #333;
+    padding: 5px;
+    padding-top: 45px;
+    text-align: center;
+    flex: 1;
+}
