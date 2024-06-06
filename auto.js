@@ -1,33 +1,28 @@
-// Example data from sensors
-let sensorData = {
-    methane: 50,
-    alcohol: 70,
-    gas: 30,
-    smoke: 80,
-    butane: 60,
-    lpg: 40
-  };
-  
-  function updateGraph() {
-    document.querySelector('.bar1').style.height = sensorData.methane + '%';
-    document.querySelector('.bar2').style.height = sensorData.alcohol + '%';
-    document.querySelector('.bar3').style.height = sensorData.gas + '%';
-    document.querySelector('.bar4').style.height = sensorData.smoke + '%';
-    document.querySelector('.bar5').style.height = sensorData.butane + '%';
-    document.querySelector('.bar6').style.height = sensorData.lpg + '%';
+// Replace with your Blynk server information
+const BLYNK_URL = 'https://blynk-cloud.com/YourAuthToken/get/V1';
+
+// Function to fetch sensor data from Blynk
+async function fetchSensorData() {
+  try {
+    const response = await fetch(BLYNK_URL);
+    const data = await response.json();
+    return data[0]; // Assuming Blynk returns an array with one element
+  } catch (error) {
+    console.error('Error fetching sensor data:', error);
+    return null;
   }
-  
-  // Simulate real-time data update
-  setInterval(() => {
-    // Fetch new data from Blynk or any other source
-    // For now, we'll just simulate new data
-    sensorData.methane = Math.floor(Math.random() * 100);
-    sensorData.alcohol = Math.floor(Math.random() * 100);
-    sensorData.gas = Math.floor(Math.random() * 100);
-    sensorData.smoke = Math.floor(Math.random() * 100);
-    sensorData.butane = Math.floor(Math.random() * 100);
-    sensorData.lpg = Math.floor(Math.random() * 100);
-    
-    updateGraph();
-  }, 5000); // Update every 5 seconds
-  
+}
+
+function updateGraph(smokeValue) {
+  const smokeBar = document.querySelector('.bar1');
+  smokeBar.style.height = `${smokeValue}%`;
+  smokeBar.setAttribute('data-description', `Smoke: ${smokeValue}`);
+}
+
+// Update graph with real-time data every 5 seconds
+setInterval(async () => {
+  const smokeValue = await fetchSensorData();
+  if (smokeValue !== null) {
+    updateGraph(smokeValue);
+  }
+}, 5000);
