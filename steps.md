@@ -1,5 +1,3 @@
-Certainly! Here's a step-by-step guide for using the repository and switching to the "testing" branch using Visual Studio Code (VS Code).
-
 ### Step-by-Step Guide
 
 1. **Install Git and VS Code**
@@ -115,5 +113,3 @@ git checkout -b new-branch-name  # Optional: create and switch to a new branch
 git checkout main                # Optional: switch to the main branch
 git merge testing                # Optional: merge testing branch into main
 ```
-
-Following these steps will help you set up, navigate, and work within the "testing" branch of the repository using VS Code effectively.

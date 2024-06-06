@@ -1,7 +1,3 @@
-Sure, here's a comprehensive README file for your Smoke and Gas Detector with SMS Notification project, along with instructions for setting up and using the GitHub repository.
-
----
-
 # Smoke and Gas Detector with SMS Notification
 
 ## Overview
