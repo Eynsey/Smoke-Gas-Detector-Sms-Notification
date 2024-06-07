@@ -1,6 +1,23 @@
 // Replace with your Blynk server information
 const BLYNK_URL = 'https://blynk-cloud.com/YourAuthToken/get/V1';
 
+// Function to update the battery percentage displayed on the webpage
+function updateBatteryPercentage(percentage) {
+  document.getElementById("battery-percentage").innerText = percentage + "%";
+}
+
+// Function to fetch battery percentage from Blynk (an IoT platform), in this example, it's simulated with a constant value.
+function fetchBatteryPercentageFromBlynk() {
+  var batteryPercentage = 50; // Example battery percentage received from Blynk (simulated)
+  updateBatteryPercentage(batteryPercentage); // Update the displayed battery percentage
+}
+
+// Fetch the battery percentage initially when the page loads
+fetchBatteryPercentageFromBlynk();
+
+// Set interval to periodically fetch battery percentage from Blynk every 5 seconds (5000 milliseconds)
+setInterval(fetchBatteryPercentageFromBlynk, 5000);
+
 // Function to fetch sensor data from Blynk
 async function fetchSensorData() {
   try {

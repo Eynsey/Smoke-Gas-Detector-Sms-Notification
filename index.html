@@ -11,14 +11,21 @@
     <header>
         <h1>Monitoring System</h1>
     </header>
+    <!--Battery Indicator Start-->
+    <div class="battery" id="battery">
+        <div class="battery-level" id="battery-level">
+            <p id="battery-percentage">0%</p>
+        </div>
+    </div>
+    <!--Battery Indicator Ends-->
     <!--Bar Graph Start-->
     <div class="bar-graph">
-        <div class="y-axis">
-            <div class="y-label">Danger</div>
-            <div class="y-label">High</div>
-            <div class="y-label">Medium</div>
-            <div class="y-label">Moderate</div>
-            <div class="y-label">Low</div>
+        <div class="risk-level">
+            <div class="risk-text">Critical</div>
+            <div class="risk-text">High</div>
+            <div class="risk-text">Elevated</div>
+            <div class="risk-text">Moderate</div>
+            <div class="risk-text">Low</div>
         </div>
         <div class="bar bar1" style="height: 50%;" data-description="Methane"></div>
         <div class="bar bar2" style="height: 70%;" data-description="Alcohol"></div>
@@ -26,9 +33,10 @@
         <div class="bar bar4" style="height: 80%;" data-description="Smoke"></div>
         <div class="bar bar5" style="height: 60%;" data-description="Butane"></div>
         <div class="bar bar6" style="height: 40%;" data-description="LPG"></div>
-        <!--Bar Graph Text Ends-->
+        <!--Bar Graph Ends-->
     </div>
     <!--Bar Graph Ends-->
+    <!--Linking Javascript-->
     <script src="script.js"></script>
 </body>
 </html>
