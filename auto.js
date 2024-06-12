@@ -1,12 +1,14 @@
 // Replace with your Blynk server information
-const BLYNK_URL = 'https://blynk-cloud.com/YourAuthToken/get/V1';
+const BLYNK_AUTH_TOKEN = 'YourAuthToken';
+const BLYNK_VPIN = 'V1';
+const BLYNK_URL = `https://blynk-cloud.com/${BLYNK_AUTH_TOKEN}/get/${BLYNK_VPIN}`;
 
 // Function to update the battery percentage displayed on the webpage
 function updateBatteryPercentage(percentage) {
   document.getElementById("battery-percentage").innerText = percentage + "%";
 }
 
-// Function to fetch battery percentage from Blynk (an IoT platform), in this example, it's simulated with a constant value.
+// Function to fetch battery percentage from Blynk (simulated with a constant value)
 function fetchBatteryPercentageFromBlynk() {
   var batteryPercentage = 50; // Example battery percentage received from Blynk (simulated)
   updateBatteryPercentage(batteryPercentage); // Update the displayed battery percentage
@@ -30,8 +32,9 @@ async function fetchSensorData() {
   }
 }
 
+// Function to update the graph with the fetched smoke sensor data
 function updateGraph(smokeValue) {
-  const smokeBar = document.querySelector('.bar1');
+  const smokeBar = document.querySelector('.bar4'); // Assuming the smoke bar is .bar4
   smokeBar.style.height = `${smokeValue}%`;
   smokeBar.setAttribute('data-description', `Smoke: ${smokeValue}`);
 }

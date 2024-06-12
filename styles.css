@@ -52,6 +52,18 @@ h1 {
     font-size: 48px;
 }
 
+.risk-level {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 405px;
+    width: 186px;
+    margin: 165px 0px 0px 0px ;
+    position: absolute;
+    text-align: right;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: space-between; /* Align items evenly */
+}
+
 .bar-graph {
     display: flex;
     justify-content: space-around;
@@ -61,14 +73,33 @@ h1 {
     margin: 50px auto;
     border: 4px solid black;
     background-color: #E0E0E0;
-    padding-bottom: 30px;
+    padding-bottom: px; /*30px*/
     margin-top: 165px;
+    position: relative; /* Added for positioning the pseudo-element */
+    z-index: -2;
+}
+
+.bar-graph::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(to bottom, 
+                transparent, 
+                transparent calc(100% / 10 - 1px), 
+                black calc(100% / 10 - 1px), 
+                black calc(100% / 10));
+    pointer-events: none; /* Allows clicks to pass through the gridlines */
+    z-index: -1; /* Ensures gridlines are behind the bars */
 }
 
 .bar {
     width: 10%;
     position: relative;
     text-align: left;
+    z-index: 1;
 }
 
 .bar1 {
@@ -108,26 +139,4 @@ h1 {
     width: 100%;
     text-align: center;
     color: black;
-}
-/* Styles for the graph container */
-.graph-container {
-    display: flex;
-}
-
-.risk-level {
-height: 94%;
-width: 100px;
-margin-left: -5px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-
-.risk-text {
-    font-size: 20px;
-    color: #333;
-    padding: 5px;
-    padding-top: 45px; 
-    text-align: center;
-    flex: 1;
 }
