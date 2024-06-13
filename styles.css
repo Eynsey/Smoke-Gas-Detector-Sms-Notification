@@ -1,8 +1,9 @@
+/*Home Page Start*/
 * {
     margin: 0;
 }
 
-body {
+.body1 {
     font-family: Arial, sans-serif;
     background-color: #B5B5B5;
 }
@@ -17,6 +18,50 @@ header {
 h1 {
     font-size: 2.5rem;
     margin-left: 15px
+}
+
+.navbar {
+    position: fixed; /* Fix the navbar position */
+    top: 0;
+    right: 0;
+    margin-right: 100px;
+    padding: 20px;
+    margin-top: 12px;
+}
+
+.navbar li {
+    display: inline-block; 
+    padding: 0;
+    margin-top: -10px;
+    position: relative;
+}
+
+.navbar li::before {
+    content: ''; /* Add content to pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; /* Initially set width to 0 */
+    height: 100%;
+    background-color: black;
+    z-index: -1; /* Move behind the list item */
+    transition: width 0.2s ease; /* Transition width */
+}
+
+.navbar li:hover::before {
+    width: 100%; /* Expand width on hover */
+}
+
+.navbar a {
+    font-family: "Radio Canada Big";
+    font-size: larger;
+    color: black;
+    padding: 20px;
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar a:hover {
+    color: white;
 }
 
 .battery {
@@ -141,3 +186,68 @@ h1 {
     text-align: center;
     color: black;
 }
+/*Home Page Ends*/
+
+/*About Us Page Start*/
+.body2 {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.about-h2 {
+    text-align: center;
+    font-size: 49px;
+    margin-top: 35px;
+}
+
+.about-p {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin: 0px 100px 0px 100px;
+}
+/*About Us Page Ends*/
+
+/*Product Page Start*/
+.body3 {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.product-h2 {
+    text-align: center;
+    font-size: 49px;
+    margin-top: 35px;
+}
+
+.product-p {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 0px 100px 0px 100px;
+}
+/*Product Page Ends*/
+
+/*Contact Page Start*/
+.body4 {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.contact-h2 {
+    text-align: center;
+    font-size: 49px;
+    margin: 35px 0px 0px 0px;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 2px solid black; /* You can change the color and thickness */
+}
+
+.contact-p {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    margin: 0px 100px 0px 100px;
+    text-align: center;
+}
+/*Contact Page Ends*/
