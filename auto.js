@@ -1,6 +1,6 @@
 // Replace with your Blynk server information
-const BLYNK_AUTH_TOKEN = 'YourAuthToken';
-const BLYNK_VPIN = 'V1';
+const BLYNK_AUTH_TOKEN = 'ANOadnEBZASxK5P5yhyKv3cCdYq8Tdkr';
+const BLYNK_VPIN = 'V0';
 const BLYNK_URL = `https://blynk-cloud.com/${BLYNK_AUTH_TOKEN}/get/${BLYNK_VPIN}`;
 
 // Function to update the battery percentage displayed on the webpage
