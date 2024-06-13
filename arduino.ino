@@ -1,4 +1,6 @@
-#define BLYNK_PRINT Serial
+#define BLYNK_TEMPLATE_ID "TMPL6SJbCsf9w"
+#define BLYNK_TEMPLATE_NAME "Meow"
+#define BLYNK_AUTH_TOKEN "ANOadnEBZASxK5P5yhyKv3cCdYq8Tdkr"
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
