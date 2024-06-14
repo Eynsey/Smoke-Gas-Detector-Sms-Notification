@@ -21,7 +21,7 @@ h1 {
 }
 
 .navbar {
-    position: fixed; /* Fix the navbar position */
+    position: fixed; /* Fix the navbar position LEO*/
     top: 0;
     right: 0;
     margin-right: 100px;
