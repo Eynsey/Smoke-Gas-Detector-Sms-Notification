@@ -1,0 +1,168 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(asasas.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+ul{
+	position: absolute;
+	top: 1%;
+	right: 2%;
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 30px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+ul li.active a{
+	background-color: #transparent;
+	color: #fff;
+	border: 2px solid #FFF;
+}
+ul li.active a:hover{
+	background-color: #transparent;
+	color: #000;
+}
+.main{
+	max-width:1200px;
+	margin: auto;
+}
+.title1{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title1 h1{
+	color: #fff;
+	font-size:70px;
+}
+
+.title2{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-18%,-50%);
+	text-align: center;
+}
+.title2 h1{
+	color: #fff;
+	font-size:70px;
+	text-align: center;
+	margin-bottom: 20px
+}
+.title2 p1{
+	color: #fff;
+	font-size:20px;
+	padding: 0.5px;
+    background-color: rgba(37, 37, 37, 0.5);
+	text-align: center;
+}
+.title3{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title3 h1{
+	color: #fff;
+	font-size:70px;
+}
+.logo{
+	position: absolute;
+	top: 6%;
+	left: 15%;
+	transform: translate(-50%,-50%);
+	color: #FFFFFF;
+	padding: 10px 30px;
+	font-size: 35px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-shadow: 0 20px 50px rgba(0,0,0,.5);
+	overflow: hidden;
+}
+
+.container{
+	position: fixed;
+	top: 45%;
+	left: 45%;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.container .circle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container .circle::before{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: #222;
+    opacity: 0.8;
+}
+
+.container .circle::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #333;
+    border: 15px solid #4d4c51;
+    border-radius: 50%;
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.75),
+    0 -2px 2px rgba(255,255,255,0.5), 
+    inset 0 4px 2px rgba(0,0,0,0.25), 
+    inset 0 -2px 2px rgba(255,255,255,0.5);
+}
+
+.container .circle .number{
+    position: relative;
+    color: #fff;
+    z-index: 10;
+    line-height: 1em;
+    font-size: 2em;
+}
+
+.container .circle .number span{
+    font-size: 0.5em;
+    font-weight: 500;
+}
+
+.container .circle h4{
+    position: relative;
+    color: #fff;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    line-height: 0.6em;
+}

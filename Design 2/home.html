@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Project Website</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div>
+				<b><a href="https://www.facebook.com/Leonellous" class="logo">
+					Monitoring System
+				</a></b>
+			</div>
+			<ul>
+				<li class="active"><a href="home.html"><b> 
+					Home 
+				</b></a></li>
+				<li><a href="product.html"> Product</a></li>
+				<li><a href="about.html"> About </a></li>
+				<li class="menu"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="title1">
+			<h1>try lang syempre</h1>
+		</div>
+		<div class="container">
+            <div class="circle" data-degree="50" data-color="#00ff15">
+            	<h2 class="number"><span>%</span></h2>
+            	<h4>red</h4>
+        	</div>
+		</div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                let circles = document.querySelectorAll('.circle');
+                circles.forEach(function(circle) {
+                    let degree = 0;
+                    let targetDegree = parseInt(circle.getAttribute('data-degree'));
+                    let color = circle.getAttribute('data-color');
+                    let number = circle.querySelector('.number');
+                    
+                    let interval = setInterval(function() {
+                        degree += 1;
+                        if (degree > targetDegree) {
+                            clearInterval(interval);
+                            return;
+                        }
+                        if (degree >= 0 && degree <= 39) {
+                            color = "#00ff15";
+                        } 
+                        else if (degree >= 40 && degree <= 74) {
+                            color = "#fffb00";
+                        } 
+                        else if (degree >= 75 && degree <= 100) {
+                            color = "#ff0000";
+                        }
+                        circle.style.background = `conic-gradient(${color} ${degree}%, #222 0%)`;
+                        number.innerHTML = `${degree}<span>%</span>`;
+                        number.style.color = color;
+                    }, 30);
+                });
+            });
+            
+            </script>
+	</header>
+</body>
+</html>
