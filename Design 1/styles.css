@@ -5,7 +5,7 @@
 
 .body1 {
     font-family: Arial, sans-serif;
-    background-color: #B5B5B5;
+    background-image: url('asasas.png');
 }
 
 header {
@@ -191,7 +191,7 @@ h1 {
 /*About Us Page Start*/
 .body2 {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-image: url('asasas.png');
 }
 
 .about-h2 {
@@ -210,7 +210,7 @@ h1 {
 /*Product Page Start*/
 .body3 {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-image: url('asasas.png');
 }
 
 .product-h2 {
@@ -229,7 +229,7 @@ h1 {
 /*Contact Page Start*/
 .body4 {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-image: url('asasas.png');
 }
 
 .contact-h2 {
