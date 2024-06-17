@@ -98,17 +98,11 @@ ul li.active a:hover{
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
-
-.title4{
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
 .title3 h1{
 	color: #fff;
 	font-size:70px;
 }
+
 .logo{
 	position: absolute;
 	top: 6%;
@@ -124,73 +118,7 @@ ul li.active a:hover{
 	overflow: hidden;
 }
 
-.container{
-	position: fixed;
-	top: 45%;
-	left: 45%;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
-
-.container .circle{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.container .circle::before{
-    content: '';
-    position: absolute;
-    inset: 5px;
-    border-radius: 50%;
-    background: #222;
-    opacity: 0.8;
-}
-
-.container .circle::after{
-    content: '';
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    background: #333;
-    border: 15px solid #4d4c51;
-    border-radius: 50%;
-    box-shadow: inset 0 5px 10px rgba(0,0,0,0.25),
-    0 10px 10px rgba(0,0,0,0.75),
-    0 -2px 2px rgba(255,255,255,0.5), 
-    inset 0 4px 2px rgba(0,0,0,0.25), 
-    inset 0 -2px 2px rgba(255,255,255,0.5);
-}
-
-.container .circle .number{
-    position: relative;
-    color: #fff;
-    z-index: 10;
-    line-height: 1em;
-    font-size: 2em;
-}
-
-.container .circle .number span{
-    font-size: 0.5em;
-    font-weight: 500;
-}
-
-.container .circle h4{
-    position: relative;
-    color: #fff;
-    z-index: 10;
-    font-weight: 500;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    line-height: 0.6em;
-}
-.notification1 {
+.about_notification1 {
 	top: 15%;
 	left: 5%;
 	display: flex;
@@ -208,7 +136,7 @@ ul li.active a:hover{
 	--color: #32a6ff
   }
   
-  .notification1:before {
+  .about_notification1:before {
 	position: absolute;
 	content: "";
 	inset: 0.0625rem;
@@ -217,7 +145,7 @@ ul li.active a:hover{
 	z-index: 2
   }
   
-  .notification1:after {
+  .about_notification1:after {
 	position: absolute;
 	content: "";
 	width: 0.25rem;
@@ -228,7 +156,7 @@ ul li.active a:hover{
 	z-index: 4;
   }
   
-  .notititle1 {
+  .about_title1 {
 	color: var(--color);
 	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
 	font-weight: 500;
@@ -238,34 +166,14 @@ ul li.active a:hover{
   }
   
   
-  .notibody1 {
-	color: #99999d;
+  .about_body1 {
+	color: #c6c6cc;
 	padding: 0 1.25rem;
 	transition: transform 300ms ease;
 	z-index: 5;
   }
-  
-  
-  .notiglow1,
-  .notiborderglow1 {
-	position: absolute;
-	width: 20rem;
-	height: 20rem;
-	transform: translate(-50%, -50%);
-	background: radial-gradient(circle closest-side at center, white, transparent);
-	opacity: 0;
-	transition: opacity 300ms ease;
-  }
-  
-  .notiglow1 {
-	z-index: 3;
-  }
-  
-  .notiborderglow1 {
-	z-index: 1;
-  }
 
-  .notification2 {
+  .about_notification2 {
 	top: 17%;
 	left: 30%;
 	display: flex;
@@ -283,7 +191,7 @@ ul li.active a:hover{
 	--color: #32a6ff
   }
   
-  .notification2:before {
+  .about_notification2:before {
 	position: absolute;
 	content: "";
 	inset: 0.0625rem;
@@ -292,7 +200,7 @@ ul li.active a:hover{
 	z-index: 2
   }
   
-  .notification2:after {
+  .about_notification2:after {
 	position: absolute;
 	content: "";
 	width: 0.25rem;
@@ -304,43 +212,24 @@ ul li.active a:hover{
   }
   
   
-  .notititle2 {
+  .about_title2 {
 	color: var(--color);
 	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
 	font-weight: 500;
-	  font-size: 2.1rem;
+	font-size: 2.1rem;
 	transition: transform 300ms ease;
 	z-index: 5;
   }
   
   
-  .notibody2 {
-	color: #99999d;
+  .about_body2 {
+	color: #c6c6cc;
 	padding: 0 1.25rem;
 	transition: transform 300ms ease;
 	z-index: 5;
   }
   
-  .notiglow2,
-  .notiborderglow2 {
-	position: absolute;
-	width: 20rem;
-	height: 20rem;
-	transform: translate(-50%, -50%);
-	background: radial-gradient(circle closest-side at center, white, transparent);
-	opacity: 0;
-	transition: opacity 300ms ease;
-  }
-  
-  .notiglow2 {
-	z-index: 3;
-  }
-  
-  .notiborderglow2 {
-	z-index: 1;
-  }
-
-  .notification3 {
+  .about_notification3 {
 	top: 20%;
 	left: 5%;
 	display: flex;
@@ -358,7 +247,7 @@ ul li.active a:hover{
 	--color: #32a6ff
   }
   
-  .notification3:before {
+  .about_notification3:before {
 	position: absolute;
 	content: "";
 	inset: 0.0625rem;
@@ -367,7 +256,7 @@ ul li.active a:hover{
 	z-index: 2
   }
   
-  .notification3:after {
+  .about_notification3:after {
 	position: absolute;
 	content: "";
 	width: 0.25rem;
@@ -379,7 +268,7 @@ ul li.active a:hover{
   }
   
   
-  .notititle3 {
+  .about_title3 {
 	color: var(--color);
 	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
 	font-weight: 500;
@@ -388,33 +277,15 @@ ul li.active a:hover{
 	z-index: 5;
   }
   
-  .notibody3 {
-	color: #99999d;
+  .about_body3 {
+	color: #c6c6cc;
 	padding: 0 1.25rem;
 	transition: transform 300ms ease;
 	z-index: 5;
   }
   
   
-  .notiglow3,
-  .notiborderglow3 {
-	position: absolute;
-	width: 20rem;
-	height: 20rem;
-	transform: translate(-50%, -50%);
-	background: radial-gradient(circle closest-side at center, white, transparent);
-	opacity: 0;
-	transition: opacity 300ms ease;
-  }
-  
-  .notiglow3 {
-	z-index: 3;
-  }
-  
-  .notiborderglow3 {
-	z-index: 1;
-  }
-  .card1 {
+  .about_card1 {
 	position: absolute;
 	top: 12%;
 	right: 7%;
@@ -426,7 +297,7 @@ ul li.active a:hover{
 	background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   }
   
-  .card__content1 {
+  .about_card__content1 {
     background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/448353719_1165265207931676_3895924895122561658_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHYKWtnFd_Cbz2CsFlCpEEeBogtndS7BK4GiC2d1LsErjz0bcn2Bj-U94CbSpgkkXwnPbx8NKl4pafVTwRHXbF-&_nc_ohc=3uO6IVjzekoQ7kNvgGxrFG4&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFHja7GMUYmPyXaZqYbbboeS5YnNgxcklcNbgKT6FlSWA&oe=6696AF37');
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -436,7 +307,7 @@ ul li.active a:hover{
 	height: 100%;
   }
   
-  .card2 {
+  .about_card2 {
 	position: absolute;
 	top: 42.5%;
 	left: 7%;
@@ -448,7 +319,7 @@ ul li.active a:hover{
 	background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   }
   
-  .card__content2 {
+  .about_card__content2 {
     background-image: url('asasas.png');
 	background-size: 180%;
 	background-repeat: no-repeat;
@@ -457,7 +328,7 @@ ul li.active a:hover{
 	width: 100%;
 	height: 100%;
   }
-  .card3 {
+  .about_card3 {
 	position: absolute;
 	bottom: 1%;
 	right: 7%;
@@ -469,14 +340,14 @@ ul li.active a:hover{
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
 }
 
-.card__content3 {
+.about_card__content3 {
   background: rgb(5, 6, 45);
   border-radius: 17px;
   width: 100%;
   height: 100%;
 }
 
-.product_notification {
+.product_notification1 {
 	top: 13%;
 	left: 6%;
 	display: flex;
@@ -494,7 +365,7 @@ ul li.active a:hover{
 	--color: #32a6ff
   }
   
-  .product_notification:before {
+  .product_notification1:before {
 	position: absolute;
 	content: "";
 	inset: 0.0625rem;
@@ -503,8 +374,8 @@ ul li.active a:hover{
 	z-index: 2
   }
   
-  .product_notititle {
-	color: var(--color);
+  .product_notititle1 {
+	color: #ffffff;
 	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
 	font-weight: 500;
 	font-size: 2.1rem;
@@ -515,13 +386,12 @@ ul li.active a:hover{
 	align-items: center;
   }
   
-  .product_notibody {
+  .product_notibody1 {
 	color: #99999d;
 	padding: 0 1.25rem;
 	transition: transform 300ms ease;
 	z-index: 5;
   }
-  .product_notibody b{
+  .product_notibody1 b{
 	color: #ffffff;
   }
-  
