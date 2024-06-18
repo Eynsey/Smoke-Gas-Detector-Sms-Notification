@@ -7,8 +7,9 @@
 header{
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(asasas.png);
 	height: 100vh;
-	background-size: cover;
-	background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 ul{
 	position: absolute;
@@ -44,13 +45,13 @@ ul li.active a:hover{
 	max-width:1200px;
 	margin: auto;
 }
-.title1{
+.home_title1{
 	position: absolute;
 	top: 30%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
-.title1 h1{
+.home_title1 h1{
 	color: #fff;
 	font-size:70px;
 }
@@ -102,7 +103,6 @@ ul li.active a:hover{
 	color: #fff;
 	font-size:70px;
 }
-
 .logo{
 	position: absolute;
 	top: 6%;
@@ -214,7 +214,7 @@ ul li.active a:hover{
   
   .about_title2 {
 	color: var(--color);
-	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+	padding: 0.65rem 1.5rem 0.4rem 1.25rem;
 	font-weight: 500;
 	font-size: 2.1rem;
 	transition: transform 300ms ease;
@@ -348,14 +348,14 @@ ul li.active a:hover{
 }
 
 .product_notification1 {
-	top: 13%;
+	top: 10%;
 	left: 6%;
 	display: flex;
 	flex-direction: column;
 	isolation: isolate;
 	position: relative;
 	width: 108rem;
-	height: 48rem;
+	height: 68rem;
 	background: #29292c;
 	border-radius: 1rem;
 	overflow: hidden;
@@ -387,11 +387,67 @@ ul li.active a:hover{
   }
   
   .product_notibody1 {
-	color: #99999d;
+	color: #d3d3d3;
 	padding: 0 1.25rem;
 	transition: transform 300ms ease;
 	z-index: 5;
   }
   .product_notibody1 b{
+	font-size: 1.3rem;
 	color: #ffffff;
   }
+  
+  .product_notibody1 p{
+	color: #d3d3d3;
+  }
+  .contact_card {
+	display: flex;
+	top: 5%;
+	left: 32%;
+	align-items: center;
+	flex-direction: column;
+	isolation: isolate;
+	position: relative;
+	width: 38rem;
+	height: 38rem;
+	background: #29292c;
+	border-radius: 1rem;
+	overflow: hidden;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 16px;
+	--color: #32a6ff
+  }
+  
+  .contact_card:before {
+	position: absolute;
+	content: "";
+	inset: 0.0625rem;
+	border-radius: 0.9375rem;
+	background: #18181b;
+	z-index: 2
+  }
+  .notititle1 {
+	color: #fff;
+	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+	font-weight: 500;
+	font-size: 2.1rem;
+	transition: transform 300ms ease;
+	z-index: 5;
+  }
+  
+  .notititle {
+	color: var(--color);
+	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+	font-weight: 500;
+	font-size: 1.5rem;
+	transition: transform 300ms ease;
+	z-index: 5;
+  }
+  .notibody {
+	color: #99999d;
+	padding: 0 1.25rem;
+	transition: transform 300ms ease;
+	z-index: 5;
+  }
+  
+  
