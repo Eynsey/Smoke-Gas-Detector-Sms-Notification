@@ -46,3 +46,4 @@ setInterval(async () => {
     updateGraph(smokeValue);
   }
 }, 5000);
+

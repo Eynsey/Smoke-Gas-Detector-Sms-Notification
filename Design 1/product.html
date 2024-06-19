@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body class="body3">
-    <header>
+    <header class="header">
         <h1>Product</h1>
         <!-- Navigation bar start -->
         <nav class="navbar">
@@ -23,69 +23,34 @@
         </nav>
         <!-- Navigation bar ends -->
     </header>
-    <h2 class="product-h2">SPECIFICATION</h2>
-        <br>
-        <br>
-        <p class="product-p">Arduino Uno - It's one of the most popular Arduino boards, featuring an 
-        ATmega328P microcontroller. It has 14 digital input/output pins, 6 analog 
-        inputs, a USB connection, a power jack, and more.</p>
-        <br>
-        <p class="product-p">Smoke Sensors - MQ series a metal Oxide Semiconductor 
-        (MOS) type Gas Sensor mainly used to detect gases like 
-        Methane, Butane, LPG, Smoke, etc. It is also known 
-        as Chemiresistor as the gas detection is based is based 
-        on the change of resistance of the sensing material 
-        when the gas comes in to contact.</p>
-        <br>
-        <p class="product-p">The Buzzer Module Arduino Compatible - Is an electronic component
-            designed to produce audible sounds when activated. It is specifically tailored 
-            to be compatible with Arduino microcontrollers and othersimilar development 
-            boards. This module typically
-            consists of a piezoelectric buzzer element housed in a small plastic casing, with pins or connectors for easy 
-            interfacing with Arduino or other microcontroller systems</p>
-        <br>
-        <p class="product-p">RGB LED Module - This module contains a 10mm RGB (Red, Green, Blue) LED, which is capable of producing
-            various colors by combining different intensities of red, green, and blue light.</p>
-        <br>
-        <p class="product-p">Light-emitting Lamp Bead - The LED module consists of individual light emitting lamp beads for each color channel (red, green, and blue), allowing for 
-            precise control over color output. Multiple Colors- With the ability to emit red, 
-            yellow, blue, green, white, and other colors, this LED module offers a wide 
-            range of visual possibilities for Arduino projects.</p>
-        <br>
-        <p class="product-p">Sensor Diode - It may also include a sensor diode
-            to detect ambient light levels or to provide feedback
-            on the LED's performance.</p>
-        <br>
-        <p class="product-p">Power Supply - Ensure a reliable power supply for the Arduino board and other components. This could be 
-            a battery or a dedicated power source.</p>
-        <br>
-        <p class="product-p">14.8V DC 750mAh LiPo Rechargeable Battery Pack - Is a compact, 
-            rechargeable energy source with a 14.8-volt a, suitable for high-drain 
-            applications, featuring a fuse for protection, but lacking built-in 
-            safeguards against overcharging or over-discharging, requiring careful 
-            handling to</p>
-        <br>
-        <p class="product-p">Connectors and Wiring - Jumper wires and connectors are essential
-            components used to establish electrical connections between various 
-            electronic components on a breadboard or between different modules, 
-            facilitating easy prototyping and experimentation in electronic projects.</p>
-        <br>
-        <p class="product-p">GSM Module - Choose a GSM module compatible with your Arduino board. Common options include 
-            SIM800L or SIM900</p>
-        <br>
-        <p class="product-p">SIM Card - You'll need a SIM card to enable the GSM module to send SMS messages. Power Supply for GSM 
-            Module: Ensure that the GSM module has a suitable power supply, which may be separate from the Arduino 
-            power supply. Antenna: Most GSM modules require an antenna for reliable communication.</p>
-        <br>
-        <p class="product-p">5MM 3V LED Light - is a semiconductor device that emits light when an electric 
-            current flows through it. When current passes through an LED, the electrons 
-            recombine with holes emitting light in the process.</p>
-        <br>
-        <p class="product-p">A printed circuit board, or PCB, - is used to 
-            mechanically support and electrically connect 
-            electronic components using conductive 
-            pathways, tracks or signal traces etched from 
-            copper sheets laminated onto a non-conductive substrate.</p>
+    <!-- Product Section Start -->
+    <section class="product-section">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="product/arduino.png" alt="Product Image 1">
+                <img src="product/mq2.png" alt="Product Image 2" style="display: none;">
+                <img src="product/sim800L.png" alt="Product Image 3" style="display: none;">
+                <img src="product/wifimodule.png" alt="Product Image 4" style="display: none;">
+                <img src="product/buzzer.png" alt="Product Image 5" style="display: none;">
+                <img src="product/wifimodule.png" alt="Product Image 4" style="display: none;">
+                <img src="product/wifimodule.png" alt="Product Image 4" style="display: none;">
+                <!-- Add more images as needed -->
+                <button class="prev-button" onclick="prevImage()">Previous</button>
+                <button class="next-button" onclick="nextImage()">Next</button>
+            </div>
+            
+            <div class="product-description">
+                <h2 class="product-h2">Arduino Uno</h2>
+                <p class="product-p">
+                    It's one of the most popular Arduino boards, featuring an ATmega328P microcontroller. 
+                    It has 14 digital input/output pins, 6 analog inputs, a USB connection, a power jack, 
+                    and more.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End -->
+
     <!--Linking Javascript-->
     <script src="script.js"></script>
 </body>
