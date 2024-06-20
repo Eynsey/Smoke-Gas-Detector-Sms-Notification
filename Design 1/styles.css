@@ -22,7 +22,7 @@ h1 {
 }
 
 .navbar {
-    position: flex; /*Change to flex BC it overlaps text*/
+    position: fixed; /* Fix the navbar position LEO*/
     top: 0;
     right: 0;
     margin-right: 100px;
@@ -51,7 +51,6 @@ h1 {
 
 .navbar li:hover::before {
     width: 100%; /* Expand width on hover */
-    filter:brightness(100%) blur(2px);
 }
 
 .navbar a {
@@ -139,196 +138,75 @@ h1 {
     height: 100%;
     background: repeating-linear-gradient(to bottom, 
                 transparent, 
-                transparent calc(100% / 10 - 1px), 
+                transparent calc(100% / 10 - 1px),
                 #88A8C3 calc(100% / 10 - 1px), 
                 #88A8C3 calc(100% / 10));
     pointer-events: none; /* Allows clicks to pass through the gridlines */
     z-index: -1; /* Ensures gridlines are behind the bars */
 }
+
 /*Home Page Ends*/
 
-/* About Us Page Start */
+/*About Us Page Start*/
 .body2 {
     font-family: Arial, sans-serif;
-    background-image: url('asasas.png'); /* Replace with your background image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-}
-
-.about-hr {
-    margin-top: 25px;
-    width: 100%;
-    border: none;
-    border-top: 2px solid rgb(0, 0, 0); /* You can change the color and thickness */
-}
-
-.about-section {
-    background-color: rgba(10, 10, 10, 0.582); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px; /* Adjust as needed */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    background-image: url('asasas.png');
 }
 
 .about-h2 {
+    color: white;
     text-align: center;
     font-size: 49px;
     margin-top: 35px;
-    color: white;
 }
 
 .about-p {
+    color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 25px;
-    margin: 10px 0;
-    color: white;
+    margin: 0px 100px 0px 100px;
 }
+/*About Us Page Ends*/
 
-/* About Us Page Ends */
-
-
-/* Product Page Start */
-.body3{
+/*Product Page Start*/
+.body3 {
     font-family: Arial, sans-serif;
     background-image: url('asasas.png');
-}
-/* Product Section */
-.product-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(130vh - 100px);
-}
-
-.product-container {
-    background-color: rgba(0, 0, 0, 0.8); 
-    backdrop-filter: blur(2px);
-    border-radius: 100px; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
-    padding: 20px;
-    
-}
-
-.product-image {
-    text-align: center;
-    margin-bottom: 20px;
-    
-}
-
-.product-image img {
-    width: 110%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(114, 66, 66, 0.1); 
-}
-
-.next-button {
-    background-color: #fffb00;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px; 
-    transition: background-color 0.3s ease;
-}
-
-.next-button:hover {
-    background-color: #724545;
-}
-.prev-button {
-    background-color: #fffb00;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px; 
-    transition: background-color 0.3s ease;
-}
-
-.prev-button:hover {
-    background-color: #ffffff;
-}
-
-.product-description {
-    text-align: center;
 }
 
 .product-h2 {
-    font-size: 17px;
-    color: #fff6f6; 
-    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 49px;
+    margin-top: 35px;
 }
 
 .product-p {
-    font-size: 18px;
-    color: #ffffff;
-    line-height: 1.6;
-    text-align:center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 0px 100px 0px 100px;
 }
+/*Product Page Ends*/
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .product-container {
-        margin: 5px;
-        padding: 5px;
-    }
-
-    .product-image img {
-        max-width: 100%;
-    }
-}
-
-
-
-/* Contact Page Styles */
+/*Contact Page Start*/
 .body4 {
     font-family: Arial, sans-serif;
     background-image: url('asasas.png');
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-
 }
 
-.contact-info {
+.contact-h2 {
+    color: white;
     text-align: center;
-    max-width: 600px; 
-}
-hr {
-    width: 100%;
-    border: none;
-    border-top: 2px solid rgb(0, 0, 0); 
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; 
-    margin-bottom: 100px;
-}
-
-.icon {
-    width: 50px;
-    margin-right: 20px;
+    font-size: 49px;
+    margin: 35px 0px 0px 0px;
 }
 
 .contact-p {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: 20px;
     color: white;
-    text-align: left; 
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    margin: 0px 100px 0px 100px;
+    text-align: center;
 }
 /*Contact Page Ends*/
