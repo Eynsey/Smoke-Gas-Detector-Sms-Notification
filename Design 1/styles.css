@@ -113,7 +113,7 @@ h1 {
     justify-content: space-between; /* Align items evenly */
 }
 
-.bar-graph {
+.line-graph {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -129,7 +129,7 @@ h1 {
     z-index: -2;
 }
 
-.bar-graph::before {
+.line-graph::before {
     content: "";
     position: absolute;
     top: 0;
