@@ -15,9 +15,8 @@ const descriptions = [
               "detection is based on the change of resistance of the sensing material."
     },
     {
-        title: "The Buzzer Module",
-        text: "An electronic component designed to produce audible sounds when activated. It is " +
-              "compatible with Arduino microcontrollers and other development boards."
+        title: "The SIM800L",
+        text:   "GSM module with a serial interface. It can send and receive text messages and receive phone calls. It can also connect to the internet and receive FM signals."
     },
     {
         title: "Wifi Module - ESP8266",
@@ -29,6 +28,10 @@ const descriptions = [
         title: "Buzzer",
         text: "An Arduino Buzzer is basically a beeper" +
                "The Arduino buzzer is a device that produces sound when an electric current is passed through it."
+    },
+    {
+        title: "Jumper wires",
+        text: "Used to make connections between items on Breadboard and aruinos header pin"
     }
     // Add more descriptions as needed for each image
 ];
