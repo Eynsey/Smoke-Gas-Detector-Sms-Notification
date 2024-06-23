@@ -42,9 +42,9 @@ ul li.active a{
 }
 ul li.active a:hover{
 	border: 2px solid #FFF;
-	background-color: #FFF;
+	background-color:black;
     border-radius: 50px; 
-	color: #000;
+	color: white;
 }
 .main{
 	max-width:1200px;
@@ -303,7 +303,7 @@ ul li.active a:hover{
   }
   
   .about_card__content1 {
-    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/448353719_1165265207931676_3895924895122561658_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHYKWtnFd_Cbz2CsFlCpEEeBogtndS7BK4GiC2d1LsErjz0bcn2Bj-U94CbSpgkkXwnPbx8NKl4pafVTwRHXbF-&_nc_ohc=3uO6IVjzekoQ7kNvgGxrFG4&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFHja7GMUYmPyXaZqYbbboeS5YnNgxcklcNbgKT6FlSWA&oe=6696AF37');
+    background-image: url('GroupPic.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
   background-position: center calc(100% - -35px);
@@ -352,111 +352,7 @@ ul li.active a:hover{
   height: 100%;
 }
 
-.product_notification1 {
-	top: 10%;
-	left: 6%;
-	display: flex;
-	flex-direction: column;
-	isolation: isolate;
-	position: relative;
-	width: 108rem;
-	height: 68rem;
-	background: #29292c;
-	border-radius: 1rem;
-	overflow: hidden;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 16px;
-	--gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
-	--color: #32a6ff
-  }
-  
-  .product_notification1:before {
-	position: absolute;
-	content: "";
-	inset: 0.0625rem;
-	border-radius: 0.9375rem;
-	background: #18181b;
-	z-index: 2
-  }
-  
-  .product_notititle1 {
-	color: #ffffff;
-	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
-	font-weight: 500;
-	font-size: 2.1rem;
-	transition: transform 300ms ease;
-	z-index: 5;
-	display: flex;
-	justify-content: center; 
-	align-items: center;
-  }
-  
-  .product_notibody1 {
-	color: #d3d3d3;
-	padding: 0 1.25rem;
-	transition: transform 300ms ease;
-	z-index: 5;
-  }
-  .product_notibody1 b{
-	font-size: 1.3rem;
-	color: #ffffff;
-  }
-  
-  .product_notibody1 p{
-	color: #d3d3d3;
-  }
-  .contact_card {
-	display: flex;
-	top: 5%;
-	left: 32%;
-	align-items: center;
-	flex-direction: column;
-	isolation: isolate;
-	position: relative;
-	width: 38rem;
-	height: 38rem;
-	background: #29292c;
-	border-radius: 1rem;
-	overflow: hidden;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 16px;
-	--color: #32a6ff
-  }
-  
-  .contact_card:before {
-	position: absolute;
-	content: "";
-	inset: 0.0625rem;
-	border-radius: 0.9375rem;
-	background: #18181b;
-	z-index: 2
-  }
-  .notititle1 {
-	color: #fff;
-	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
-	font-weight: 500;
-	font-size: 2.1rem;
-	transition: transform 300ms ease;
-	z-index: 5;
-  }
-  
-  .notititle {
-	color: var(--color);
-	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
-	font-weight: 500;
-	font-size: 1.5rem;
-	transition: transform 300ms ease;
-	z-index: 5;
-  }
-  .notibody {
-	color: #99999d;
-	padding: 0 1.25rem;
-	transition: transform 300ms ease;
-	z-index: 5;
-  }
-  
-   
-  .product-section {
+.product-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -487,8 +383,9 @@ ul li.active a:hover{
 	position: relative;
 }
 
-.next-button {
-    background-color: #fffb00;
+.product-next-button {
+    background-color: #32a6ff;
+	color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -497,12 +394,14 @@ ul li.active a:hover{
     transition: background-color 0.3s ease;
 }
 
-.next-button:hover {
+.product-next-button:hover {
+	color: #32a6ff;
     background-color: #ffffff;
     font-weight: bold;
 }
-.prev-button {
-    background-color: #fffb00;
+.product-prev-button {
+    background-color: #32a6ff;
+	color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -511,7 +410,8 @@ ul li.active a:hover{
     transition: background-color 0.3s ease;
 }
 
-.prev-button:hover {
+.product-prev-button:hover {
+	color: #32a6ff;
     background-color: #ffffff;
     font-weight: bold;
 }
@@ -532,3 +432,53 @@ ul li.active a:hover{
     line-height: 1.6;
     text-align:center;
 }
+  .contact_card {
+	display: flex;
+	top: 15%;
+	left: 29%;
+	align-items: center;
+	flex-direction: column;
+	isolation: isolate;
+	position: relative;
+	width: 48rem;
+	height: 25rem;
+	background: #29292c;
+	border-radius: 1rem;
+	overflow: hidden;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 16px;
+	--color: #32a6ff
+  }
+  
+  .contact_card:before {
+	position: absolute;
+	content: "";
+	inset: 0.0625rem;
+	border-radius: 0.9375rem;
+	background: #18181b;
+	z-index: 2
+  }
+  .contact-notititle1 {
+	color: #fff;
+	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+	font-weight: 500;
+	font-size: 2.1rem;
+	transition: transform 300ms ease;
+	z-index: 5;
+  }
+  
+  .contact-notititle {
+	color: var(--color);
+	padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+	font-weight: 500;
+	font-size: 1.5rem;
+	transition: transform 300ms ease;
+	z-index: 5;
+  }
+  .contact-notibody {
+	color: #99999d;
+	padding: 0 1.25rem;
+	transition: transform 300ms ease;
+	z-index: 5;
+  }
+   

@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gallery</title>
-	<link rel="stylesheet" type="text/css" href="home.css">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
-	<header>
-		<div class="main">
-			<div>
-				<b class="logo">
-					Monitoring System
-				</b>
-			</div>
-			<ul>
-				<li><a href="home.html">Home</a></li>
-				<li class="active"><a href="product.html"><b> Product </b></a></li>
-				<li><a href="about.html"> About </a></li>
-				<li><a href="contact.html"> Contact Us </a></li>
-			</ul>
-		</div>
-		<div class="title3">
-			
-		</div>
-		<section class="product-section">
+    <header>
+        <!-- Main header section -->
+        <div class="main">
+            <!-- Logo and website name -->
+            <div>
+                <b class="logo">
+                    Monitoring System
+                </b>
+            </div>
+            <!-- Navigation menu -->
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="active"><a href="product.html"><b>Product</b></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- Product Section -->
+        <section class="product-section">
+            <!-- Container for product image and description -->
             <div class="product-container">
+                <!-- Product Image -->
                 <div class="product-image">
+                    <!-- Image slideshow (example: displaying one image at a time) -->
                     <img src="product/arduino.png" alt="Product Image 1">
                     <img src="product/mq2.png" alt="Product Image 2" style="display: none;">
                     <img src="product/sim800L.png" alt="Product Image 3" style="display: none;">
                     <img src="product/wifimodule.png" alt="Product Image 4" style="display: none;">
                     <img src="product/buzzer.png" alt="Product Image 5" style="display: none;">
-                    <img src="product/wifimodule.png" alt="Product Image 4" style="display: none;">
-                    <img src="product/wifimodule.png" alt="Product Image 4" style="display: none;">
                     <!-- Add more images as needed -->
-                    <button class="prev-button" onclick="prevImage()">Previous</button>
-                    <button class="next-button" onclick="nextImage()">Next</button>
+                    
+                    <!-- Navigation buttons for image slideshow -->
+                    <button class="product-prev-button" onclick="prevImage()">Previous</button>
+                    <button class="product-next-button" onclick="nextImage()">Next</button>
                 </div>
                 
+                <!-- Product Description -->
                 <div class="product-description">
                     <h2 class="product-h2">Arduino Uno</h2>
                     <p class="product-p">
                         It's one of the most popular Arduino boards, featuring an ATmega328P microcontroller.
-                         It has 14 digital input/output pins, 6 analog inputs, a USB connection, a power jack, 
+                        It has 14 digital input/output pins, 6 analog inputs, a USB connection, a power jack, 
                         and more.
                     </p>
                 </div>
             </div>
         </section>
         
-    <script src="product.js"></script>
-	</header>
+        <!-- Script for product image slideshow -->
+        <script src="product.js"></script>
+    </header>
 </body>
 </html>
