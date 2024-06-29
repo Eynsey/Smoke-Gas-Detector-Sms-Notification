@@ -23,57 +23,36 @@
         </nav>
         <!-- Navigation bar ends -->
     </header>
-        <h2 class="product-h2">SPECIFICATION</h2>
-        <p class="product-p">The Buzzer Module Arduino Compatible - Is an electronic component
-            designed to produce audible sounds when activated. It is specifically tailored 
-            to be compatible with Arduino microcontrollers and othersimilar development 
-            boards. This module typically
-            consists of a piezoelectric buzzer element housed in a small plastic casing, with pins or connectors for easy 
-            interfacing with Arduino or other microcontroller systems</p>
-        <br>
-        <p class="product-p">RGB LED Module - This module contains a 10mm RGB (Red, Green, Blue) LED, which is capable of producing
-            various colors by combining different intensities of red, green, and blue light.</p>
-        <br>
-        <p class="product-p">Light-emitting Lamp Bead - The LED module consists of individual light emitting lamp beads for each color channel (red, green, and blue), allowing for 
-            precise control over color output. Multiple Colors- With the ability to emit red, 
-            yellow, blue, green, white, and other colors, this LED module offers a wide 
-            range of visual possibilities for Arduino projects.</p>
-        <br>
-        <p class="product-p">Sensor Diode - It may also include a sensor diode
-            to detect ambient light levels or to provide feedback
-            on the LED's performance.</p>
-        <br>
-        <p class="product-p">Power Supply - Ensure a reliable power supply for the Arduino board and other components. This could be 
-            a battery or a dedicated power source.</p>
-        <br>
-        <p class="product-p">14.8V DC 750mAh LiPo Rechargeable Battery Pack - Is a compact, 
-            rechargeable energy source with a 14.8-volt a, suitable for high-drain 
-            applications, featuring a fuse for protection, but lacking built-in 
-            safeguards against overcharging or over-discharging, requiring careful 
-            handling to</p>
-        <br>
-        <p class="product-p">Connectors and Wiring - Jumper wires and connectors are essential
-            components used to establish electrical connections between various 
-            electronic components on a breadboard or between different modules, 
-            facilitating easy prototyping and experimentation in electronic projects.</p>
-        <br>
-        <p class="product-p">GSM Module - Choose a GSM module compatible with your Arduino board. Common options include 
-            SIM800L or SIM900</p>
-        <br>
-        <p class="product-p">SIM Card - You'll need a SIM card to enable the GSM module to send SMS messages. Power Supply for GSM 
-            Module: Ensure that the GSM module has a suitable power supply, which may be separate from the Arduino 
-            power supply. Antenna: Most GSM modules require an antenna for reliable communication.</p>
-        <br>
-        <p class="product-p">5MM 3V LED Light - is a semiconductor device that emits light when an electric 
-            current flows through it. When current passes through an LED, the electrons 
-            recombine with holes emitting light in the process.</p>
-        <br>
-        <p class="product-p">A printed circuit board, or PCB, - is used to 
-            mechanically support and electrically connect 
-            electronic components using conductive 
-            pathways, tracks or signal traces etched from 
-            copper sheets laminated onto a non-conductive substrate.</p>
+    <section class="product-section">
+        <!-- Container for product image and description -->
+        <div class="product-container">
+            <!-- Product Image -->
+            <div class="product-image">
+                <!-- Image slideshow (example: displaying one image at a time) -->
+                <img src="product/arduino.png" alt="Product Image 1">
+                <img src="product/mq2.png" alt="Product Image 2" style="display: none;">
+                <img src="product/sim800L.png" alt="Product Image 3" style="display: none;">
+                <img src="product/wifimodule.png" alt="Product Image 4" style="display: none;">
+                <img src="product/buzzer.png" alt="Product Image 5" style="display: none;">
+                <!-- Add more images as needed -->
+                
+                <!-- Navigation buttons for image slideshow -->
+                <button class="product-prev-button" onclick="prevImage()">Previous</button>
+                <button class="product-next-button" onclick="nextImage()">Next</button>
+            </div>
+            
+            <!-- Product Description -->
+            <div class="product-description">
+                <h2 class="product-h2">Arduino Uno</h2>
+                <p class="product-p">
+                    It's one of the most popular Arduino boards, featuring an ATmega328P microcontroller.
+                    It has 14 digital input/output pins, 6 analog inputs, a USB connection, a power jack, 
+                    and more.
+                </p>
+            </div>
+        </div>
+    </section>
     <!--Linking Javascript-->
-    <script src="auto.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
